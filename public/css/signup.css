@@ -1,0 +1,109 @@
+/* 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.signup-container {
+    background-color: white;
+    padding: 20px 40px;
+    margin:auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+.signup-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.logo-container {
+    margin-bottom: 20px; /* Spacing between logo section and form */
+}
+
+.logo-container img.logo {
+    width: 100px; /* Adjust logo width */
+    height: 100px; /* Adjust logo height */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+.logo-container h1 {
+    margin: 10px 0 0; /* Add spacing above and below the text */
+    font-size: 24px; /* Font size for "Natours" */
+    font-weight: 700; /* Make it bold */
+    color: #333; /* Text color */
+    font-family: 'Roboto', sans-serif; /* Match font style */
+    text-align: center; /* Align the text below the logo */
+}
+
+
+.signup-container label {
+    font-size: 14px;
+    color: #606060;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+.signup-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.signup-container #role{
+  padding:5px;
+  margin-bottom: 15px;
+}
+
+.signup-container .error-message {
+    font-size: 12px;
+    color: red;
+    margin-bottom: 15px;
+}
+.signup-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.signup-container button:hover {
+    background-color: #218838;
+}
+.signup-container p {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    margin-top: 25px;
+}
+.signup-container .passhint {
+    padding: 5px;
+    color: grey;
+    font-size: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    width: 9vw;
+    display: block;
+}
+.signup-container .passhint .passwordcheck {
+    color: red;
+    margin-bottom: 2px;
+    font-size: 10px;
+}

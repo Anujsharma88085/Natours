@@ -1,0 +1,40 @@
+//- doctype html
+//- html(lang="en")
+//-   head
+//-     meta(charset="UTF-8")
+//-     meta(name="viewport" content="width=device-width, initial-scale=1.0")
+//-     title Sign Up
+//-     link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet")
+//-     link(rel="stylesheet" href="styles.css")
+
+
+extends base
+
+block append head 
+  link(rel ='stylesheet' href='/css/signup.css')
+
+block content
+  main.main
+    .signup-container
+      .logo-container
+        img.logo(src="/img/logo-green-round.png" alt="Natours Logo")
+        h1 Natours
+      form.signup-form
+
+        label(for="name") Name
+        input#name(type="text" name="name" placeholder="Enter your name" required)
+
+        label(for="email") Email
+        input#email(type="email" name="email" placeholder="Enter your email" required)
+
+        label(for="photo") Profile Photo (Optional)
+        input#photo(type="file" name="photo" accept="image/*")
+
+        label(for="password") Password
+        input#password(type="password" name="password" placeholder="Enter your password" minlength="8" required)
+
+        label(for="passwordConfirm") Confirm Password
+        input#passwordConfirm(type="password" name="passwordConfirm" placeholder="Confirm your password" required)
+
+        button.signup-button(type="submit") Sign Up
+        p &copy; 2024 Natours || All rights reserved
